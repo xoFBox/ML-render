@@ -1,0 +1,242 @@
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+header {
+    background-color: var(--amarillo);
+}
+
+header img{
+    width:50%;
+}
+div img{
+    width: 100%;
+}
+
+header form{
+    width: 50%;
+    
+    text-align: center;
+}
+
+header form input{
+    max-width: 80%;
+    border-style: solid;
+    width: 60%;
+}
+
+header nav ul{
+    display: none;
+}
+
+header nav ul li a{
+    font-size: 18px;
+}
+
+header p{
+    text-align: center;
+    width: 100%;
+}
+
+.burger-menu {
+    display: block;
+
+    text-align: center;
+    margin: auto;
+    max-width: 50px;
+}
+ 
+.burger-menu i{
+    font-size: 20px;
+    color: white;
+    background-color: var(--celeste);
+    padding: 10px;
+    border-radius: 10%;
+}
+
+main{
+    flex-direction: column;
+    text-align: center;
+}
+
+main form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+main form div{
+    padding: 20px;
+}
+
+main article{
+    margin: 5px;
+}
+
+main article div{
+    position: relative;
+    max-width: 320px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+main section{
+    text-align: center;
+}
+
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: var(--verde);
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main article div h5{
+    visibility: hidden;
+    width: 100%;
+}
+
+main article:hover i{
+    transform:rotateZ(-90deg);
+    transition-duration: 2s;
+}
+
+main article:hover h5{
+    visibility: visible;
+}
+
+main article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main button:hover{
+    background-color: #0022AA;
+}
+
+body{
+    background-color: var(--gris-claro);
+    font-family: 'Roboto' , ;
+}
+
+.discount{
+    flex-grow: 0.70;
+    font-size: 16px;
+    color: var(--verde);
+}
+
+.price{
+    flex-grow: 0.30;
+    font-size: 18px;
+}
+
+footer{
+    width: 95%;
+    text-align: center;
+    margin: 30px;
+}
+
+footer p{
+    font-weight: normal;
+}
+
+footer i{
+    color: var(--celeste);
+    font-size: 30px;
+}
+
+footer i:hover{
+    color: var(--verde)
+}
+
+.cajaflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-device-width: 361px){
+    header img{
+        width: 33%;
+    }
+    
+    header form{
+        width: 33%;
+    }
+
+    header p{
+        width: 33%;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    header nav ul{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style-type: none;
+        width: 50%;
+    }
+
+    header nav ul li{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    header nav div{
+        display: none;
+    }
+
+    main article div h5{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media (min-device-width: 769px){
+    header ul li{
+        font-size: 20px;
+    }
+
+    main article{
+        flex-grow: 0;
+    }
+
+    footer div{
+        width: 33%;
+    }
+
+}
